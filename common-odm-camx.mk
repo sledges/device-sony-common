@@ -1,5 +1,5 @@
 # CAMX Libs
-ifeq ($(filter loire tone yoshino nile ganges seine,$(SOMC_PLATFORM)),)
+ifeq ($(filter nile ganges seine,$(SOMC_PLATFORM)),)
 PRODUCT_PACKAGES += \
     libcamxexternalformatutils \
     com.qti.node.swregistration \
