@@ -28,6 +28,7 @@ PRODUCT_PACKAGES += \
     com.qti.stats.afwrapper \
     com.qti.stats.awbwrapper \
     com.qti.stats.hafoverride \
+    com.qti.settings.sm8350 \
     com.qtistatic.stats.aec \
     com.qtistatic.stats.af \
     com.qtistatic.stats.awb \
@@ -101,4 +102,15 @@ PRODUCT_PACKAGES += \
     com.sony.eeprom.lena_tele \
     com.sony.eeprom.lena_uwide \
     com.sony.eeprom.lena_wide
+endif
+
+ifeq ($(SOMC_PLATFORM),sagami)
+PRODUCT_PACKAGES += \
+    com.sony.sensor.s5k3t2 \
+    com.sony.sensor.s5k4h7 \
+    com.sony.sensor.imx557 \
+    com.sony.sensor.imx663 \
+    com.sony.eeprom.hohgant_wide \
+    com.sony.eeprom.hohgant_uwide \
+    com.sony.eeprom.lohner
 endif
